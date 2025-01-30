@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(90deg, #7C3AED 0%, #764BA2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-formulario{
+    background-color: #F1F5F9;
+    width: 642px;
+    height: 658px;
+    padding: 96px;
+    border-radius:4px
+}
+
