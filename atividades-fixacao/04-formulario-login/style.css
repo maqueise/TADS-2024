@@ -7,16 +7,27 @@ html,body{
     height: 100%;
 }
 
+
+
 body{
-    background: linear-gradient(90deg, #7C3AED 0%, #764BA2 100%);
+    background: linear-gradient(90deg, #433de6 0%, #6167f3 100%);
+    font-family: "Roboto", serif;
+    color: #506079;
+}
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto", serif;
-    color: #314158;
+    height: 100%;
+}
+.container-form-cadastro{
+    background-color: #FEFEFE;
+    height: 100%;
+    width: 656px;
+    padding: 96px;
 }
 .container-formulario{
-    background-color: #F1F5F9;
+    background-color:  #FEFEFE;
     width: 600px;
     height: 658px;
     padding: 96px;
@@ -29,32 +40,61 @@ body{
     font-family: "Readex Pro", serif;
     font-size: 24px;
     font-weight: bold;
-    color: #1D293D;
+    color: #394353;
+    margin-bottom: 32px;
 }
 .linha-cabecalho{
     font-size: 16px;
     font-weight: 400;
 }
-.formulario-login input{
+form input{
     padding: 12px 16px;
-    background-color: white;
-    border: solid 1px #D5DAE2;
+    background-color: #FEFEFE;
+    border: solid 1px #8495AC;
     border-radius:4px;
     width: 100%;
+    outline-color:#433DE6;
 }
-.formulario-login button{
+form input:user-invalid{
+    border: solid 2px #FF2056;
+    
+}
+form button{
     appearance: none;
     border: 0;
-    background-color:#5941EA ;
+    background-color:#433DE6;
     padding: 12px 16px;
     width: 100%;
     color: white;
     font-size: 16px;
+    border-radius: 4px;
+    cursor:pointer;
 }
-.formulario-login label{
+form button:hover{
+  background-color: #695ef6;
+}
+form label{
     margin-bottom: 8px;
     display: block;
 }
 .controle-formulario{
     margin-bottom: 16px;
+}
+.inscreva-se{
+    color: #433DE6;
+    text-decoration: none;
+    font-weight: bold;
+}
+.inscreva-se:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.controle-checkbox{
+    display: flex;
+    gap: 8px;
+    align-items: start;
+    justify-content: start;
+}
+.controle-checkbox input{
+    width: fit-content;
 }

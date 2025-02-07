@@ -13,24 +13,29 @@
 </head>
 
 <body>
+    <div class="container">
     <section class="container-formulario">
         <header>
-            <img src="./img/logo.svg" class="logo" />
+            <img src="./img/logo.svg" class="logo" alt="Logotipo Front.Dev" />
             <h1 class="cabecalho">Acesse a Plataforma</h1>
             <h2 class="linha-cabecalho">Faça o login ou registre-se para começar a construir seus projetos hoje</h2>
         </header>
         <form class="formulario-login">
             <div class="controle-formulario">
-                <label>E-mail</label>
-                <input type="email" name="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" autofocus required>
             </div>
             <div class="controle-formulario">
-                <label>Senha</label>
-                <input type="password" name="senha">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
             </div>
             <button>Entrar</button>
         </form>
+        <p>
+            Ainda não tem uma conta? <a class="inscreva-se" href="cadastro.html">Inscreva-se</a>
+        </p>
     </section>
+</div>
 </body>
 
 </html>

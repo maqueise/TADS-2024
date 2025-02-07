@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container-form-cadastro">
+        <header>
+            <img src="./img/logo.svg" class="logo" alt="Logotipo Front.Dev" />
+            <h1 class="cabecalho">Formulário de Inscrição</h1>
+
+        </header>
+        <form class="formulario-cadastro">
+            <div class="controle-formulario">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" autofocus required>
+            </div>
+            <div class="controle-formulario">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="controle-formulario">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div class="controle-formulario">
+                <label for="confirme-senha">Confirme sua Senha</label>
+                <input type="password" name="senha" id="confirme-senha" required>
+            </div>
+            <div class="controle-formulario controle-checkbox">
+                <input type="checkbox" id="declaro" required />
+                <label for="declaro">
+                    Declaro que li e concordo com os Termos e Condições e com a Política de Privacidade do Front.DEV.  
+                </label>
+            </div>
+            <button>Realizar Inscrição</button>
+        </form>
+
+    </section>
+</body>
+
+</html>
