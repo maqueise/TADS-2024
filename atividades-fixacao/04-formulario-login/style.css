@@ -15,7 +15,7 @@ body {
     --primary-hover: light-dark(#6167f3, #6167f3);
     --neutral-surface: light-dark(#f6f7f9, #22262f);
     --neutral-border: light-dark(#8495ac, #506079);
-    --neutral-text: light-dark(#506079, #8495ac);
+    --neutral-text: light-dark(#506079, #c4cedb);
     --neutral-heading: light-dark(#394353,#d5dae2);
     --system-error: light-dark(#ff2056,#ff698a);
     --base-black: light-dark(#0e0e0e,#fefefe);
@@ -126,4 +126,9 @@ form label {
 
 .controle-checkbox input {
     width: fit-content;
+}
+
+
+.teste input {
+    accent-color: var(--primary-base);
 }
