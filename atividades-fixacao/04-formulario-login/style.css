@@ -10,31 +10,23 @@ body {
 }
 
 :root {
-        /* COLORS */
-        --primary-hover-light: #6167f3;
-        --primary-hover-dark: #6167f3;
-        --primary-base-light: #433de6;
-        --primary-base-dark: #808ef9;
-        --neutral-surface-light: #f6f7f9;
-        --neutral-surface-dark: #22262f;
-        --neutral-border-light: #8495ac;
-        --neutral-border-dark: #506079;
-        --neutral-text-light: #506079;
-        --neutral-text-dark: #8495ac;
-        --neutral-heading-light: #394353;
-        --neutral-heading-dark: #d5dae2;
-        --error-500-light: #ff2056;
-        --error-500-dark: #ff698a;
-        --base-black-light: #0e0e0e;
-        --base-black-dark: #fefefe;
-        --base-white-light: #fefefe;
-        --base-white-dark: #0e0e0e;
+    /* COLORS */
+    --primary-base: light-dark(#433de6, #808ef9);
+    --primary-hover: light-dark(#6167f3, #6167f3);
+    --neutral-surface: light-dark(#f6f7f9, #22262f);
+    --neutral-border: light-dark(#8495ac, #506079);
+    --neutral-text: light-dark(#506079, #8495ac);
+    --neutral-heading: light-dark(#394353,#d5dae2);
+    --system-error: light-dark(#ff2056,#ff698a);
+    --base-black: light-dark(#0e0e0e,#fefefe);
+    --base-white: light-dark(#fefefe,#0e0e0e);
+    color-scheme: light dark;
 }
 
 body {
-    background: linear-gradient(90deg, var(--primary-base-light) 0%, var(--primary-hover-light) 100%);
+    background: linear-gradient(90deg, var(--primary-base) 0%, var(--primary-hover) 100%);
     font-family: "Roboto", serif;
-    color: var(--neutral-text-light);
+    color: var(--neutral-text);
 }
 
 .container {
@@ -45,14 +37,14 @@ body {
 }
 
 .container-form-cadastro {
-    background-color: var(--neutral-surface-light);
+    background-color: var(--neutral-surface);
     height: 100%;
     width: 656px;
     padding: 96px;
 }
 
 .container-formulario {
-    background-color:var(--neutral-surface-light);
+    background-color: var(--neutral-surface);
     width: 600px;
     height: 658px;
     padding: 96px;
@@ -66,7 +58,7 @@ body {
     font-family: "Readex Pro", serif;
     font-size: 24px;
     font-weight: bold;
-    color: var(--neutral-heading-light);
+    color: var(--neutral-heading);
     margin-bottom: 32px;
 }
 
@@ -77,32 +69,32 @@ body {
 
 form input {
     padding: 12px 16px;
-    background-color: var(--base-white-light);
-    border: solid 1px var(--neutral-border-light);
+    background-color: var(--base-white);
+    border: solid 1px var(--neutral-border);
     border-radius: 4px;
     width: 100%;
-    outline-color: var(--primary-base-light);
+    outline-color: var(--primary-base);
 }
 
 form input:user-invalid {
-    border: solid 2px var(--error-500-light);
+    border: solid 2px var(--system-error);
 
 }
 
 form button {
     appearance: none;
     border: 0;
-    background-color: var(--primary-base-light);
+    background-color: var(--primary-base);
     padding: 12px 16px;
     width: 100%;
-    color: var(--base-white-light);
+    color: var(--base-white);
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: var(--primary-hover-light);
+    background-color: var(--primary-hover);
 }
 
 form label {
@@ -115,7 +107,7 @@ form label {
 }
 
 .inscreva-se {
-    color: var(--primary-base-light);
+    color: var(--primary-base);
     text-decoration: none;
     font-weight: bold;
 }
