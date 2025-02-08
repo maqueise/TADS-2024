@@ -1,100 +1,137 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
 }
 
-
-
-body{
-    background: linear-gradient(90deg, #433de6 0%, #6167f3 100%);
-    font-family: "Roboto", serif;
-    color: #506079;
+:root {
+        /* COLORS */
+        --primary-hover-light: #6167f3;
+        --primary-hover-dark: #6167f3;
+        --primary-base-light: #433de6;
+        --primary-base-dark: #808ef9;
+        --neutral-surface-light: #f6f7f9;
+        --neutral-surface-dark: #22262f;
+        --neutral-border-light: #8495ac;
+        --neutral-border-dark: #506079;
+        --neutral-text-light: #506079;
+        --neutral-text-dark: #8495ac;
+        --neutral-heading-light: #394353;
+        --neutral-heading-dark: #d5dae2;
+        --error-500-light: #ff2056;
+        --error-500-dark: #ff698a;
+        --base-black-light: #0e0e0e;
+        --base-black-dark: #fefefe;
+        --base-white-light: #fefefe;
+        --base-white-dark: #0e0e0e;
 }
-.container{
+
+body {
+    background: linear-gradient(90deg, var(--primary-base-light) 0%, var(--primary-hover-light) 100%);
+    font-family: "Roboto", serif;
+    color: var(--neutral-text-light);
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.container-form-cadastro{
-    background-color: #FEFEFE;
+
+.container-form-cadastro {
+    background-color: var(--neutral-surface-light);
     height: 100%;
     width: 656px;
     padding: 96px;
 }
-.container-formulario{
-    background-color:  #FEFEFE;
+
+.container-formulario {
+    background-color:var(--neutral-surface-light);
     width: 600px;
     height: 658px;
     padding: 96px;
-    border-radius:4px;
-    display:flex;
+    border-radius: 4px;
+    display: flex;
     flex-direction: column;
-    gap:32px;
+    gap: 32px;
 }
-.cabecalho{
+
+.cabecalho {
     font-family: "Readex Pro", serif;
     font-size: 24px;
     font-weight: bold;
-    color: #394353;
+    color: var(--neutral-heading-light);
     margin-bottom: 32px;
 }
-.linha-cabecalho{
+
+.linha-cabecalho {
     font-size: 16px;
     font-weight: 400;
 }
-form input{
+
+form input {
     padding: 12px 16px;
-    background-color: #FEFEFE;
-    border: solid 1px #8495AC;
-    border-radius:4px;
+    background-color: var(--base-white-light);
+    border: solid 1px var(--neutral-border-light);
+    border-radius: 4px;
     width: 100%;
-    outline-color:#433DE6;
+    outline-color: var(--primary-base-light);
 }
-form input:user-invalid{
-    border: solid 2px #FF2056;
-    
+
+form input:user-invalid {
+    border: solid 2px var(--error-500-light);
+
 }
-form button{
+
+form button {
     appearance: none;
     border: 0;
-    background-color:#433DE6;
+    background-color: var(--primary-base-light);
     padding: 12px 16px;
     width: 100%;
-    color: white;
+    color: var(--base-white-light);
     font-size: 16px;
     border-radius: 4px;
-    cursor:pointer;
+    cursor: pointer;
 }
-form button:hover{
-  background-color: #695ef6;
+
+form button:hover {
+    background-color: var(--primary-hover-light);
 }
-form label{
+
+form label {
     margin-bottom: 8px;
     display: block;
 }
-.controle-formulario{
+
+.controle-formulario {
     margin-bottom: 16px;
 }
-.inscreva-se{
-    color: #433DE6;
+
+.inscreva-se {
+    color: var(--primary-base-light);
     text-decoration: none;
     font-weight: bold;
 }
-.inscreva-se:hover{
+
+.inscreva-se:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.controle-checkbox{
+
+.controle-checkbox {
     display: flex;
     gap: 8px;
     align-items: start;
     justify-content: start;
 }
-.controle-checkbox input{
+
+.controle-checkbox input {
     width: fit-content;
 }
