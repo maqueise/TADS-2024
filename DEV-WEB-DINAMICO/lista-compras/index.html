@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Starter Project</title>
+</head>
+
+<body>
+    <div class="container mx-auto h-screen">
+        <h1 class="text-2xl mb-3">Lista de Compras</h1>
+        <label class="input">
+            <span class="label">Item</span>
+            <input type="text" placeholder="descricao do item" id="item" />
+        </label>
+        <button class="btn btn-primary" id="btnAdicionar">Adicionar</button>
+
+        <ul class="list shadow-md rounded-box p-4" id="listaCompras">
+            
+        </ul>
+        <div class="badge badge-primary mt-2" id="total"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
