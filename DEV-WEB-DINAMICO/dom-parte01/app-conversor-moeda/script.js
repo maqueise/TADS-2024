@@ -1,5 +1,5 @@
 let inputBRL =  document.querySelector('#inputBRL')
-let inputUSD =  document.querySelector('#inputUSD')
+let inputUSD =  document.querySelector('#inptUSD')
 let btnConverter =  document.querySelector('#btnConverter')
 let cotacao = 5.75
 let resultadoCotacao = 0
